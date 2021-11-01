@@ -1,0 +1,342 @@
+body{
+	background-color: black;
+}
+
+a:hover{
+	color: lightseagreen;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 8vh 150vh 20vh;
+	grid-template-areas: "cab cab cab"
+											 "bod bod bod"
+											 "rod rod rod";
+	grid-gap: 80px;										 
+}
+
+#cabecalho{
+	grid-area: cab;
+	background-color: black;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bolder;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "esq meio dir";
+	grid-template-rows: 6vh;
+	align-content: center;
+	grid-gap: 300px;
+}
+
+#mid{
+	grid-area: meio;
+	text-align: center;
+	color: white;
+	font-size: larger;
+
+	display: grid;
+	grid-template-areas: "art sao";
+	align-content: center;
+}
+
+.art5{
+	grid-area: art;
+	margin-top: 1vh;
+	margin-left: 3vw;
+
+	height: 5vh;
+}
+
+#left{
+	grid-area: esq;
+	text-align: center;
+	font-size: larger;
+
+	display: grid;
+	grid-template-areas: "art sao1";
+	align-content: center;
+}
+
+#SAO2{
+	grid-area: sao1;
+
+	display: grid;
+	align-content: center;
+}
+
+#right{
+	grid-area: dir;
+	text-align: center;
+	font-size: larger;
+	color: white;
+
+	display: grid;
+	grid-template-areas: "art sao2";
+	align-content: center;
+}
+
+#SAO3{
+	grid-area: sao2;
+
+	display: grid;
+	align-content: center;
+	margin-right: 2vw;
+}
+
+#corpo{
+	grid-area: bod;
+	background-color: black;
+	color: white;	
+
+ 	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 50vh 50vh 50vh;
+	grid-template-areas: "p1 p2 p3 p4 p5"
+											 "p6 p7 p8 p9 p10"
+											 "p11 p12 p13 p14 p15";
+	grid-gap: 20px;
+											 									
+}
+
+#rodape{
+	grid-area: rod;
+	border: solid black 5px;
+
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-gap: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	transition: ease-in-out 0.4s;
+}
+
+.social{
+	height: 4vh;
+	width: 2.5vw;
+	border-radius: 50%;
+	padding: 3px;
+ }
+
+ ul{
+	 display: inline;
+	 list-style: none;
+ }
+
+ #redes{
+	text-align: center;
+ 	font-size: x-large;
+ 	font-weight: bold;
+ 	color: white;
+ 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left: 2.5vw; 
+}
+
+
+.imgs{
+	height: 40vh;
+	width: 15vw;
+	border: solid 2px;
+	transition: ease-in-out 0.4s;
+}
+
+.imgs:hover{
+	color: lightseagreen;
+}
+
+#art5{
+	height: 23vh;
+	margin-top: 2vh;
+}
+
+#perso{
+	grid-area: p1;
+	text-align: center;
+}
+
+#perso2{
+	grid-area: p2;
+	text-align: center;	
+}
+
+#perso3{
+	grid-area: p3;
+	text-align: center;		
+}
+
+#perso4{
+	grid-area: p4;
+	text-align: center;	
+}
+
+#perso5{
+	grid-area: p5;
+	text-align: center;	
+}
+
+#perso6{
+	grid-area: p6;
+	text-align: center;	
+}
+
+#perso7{
+	grid-area: p7;
+	text-align: center;	
+}
+
+#perso8{
+	grid-area: p8;
+	text-align: center;	
+}
+
+#perso9{
+	grid-area: p9;
+	text-align: center;	
+}
+
+#perso10{
+	grid-area: p10;
+	text-align: center;	
+}
+
+#perso11{
+	grid-area: p11;
+	text-align: center;	
+}
+
+#perso12{
+	grid-area: p12;
+	text-align: center;	
+}
+
+#perso13{
+	grid-area: p13;
+	text-align: center;
+}
+
+#perso14{
+	grid-area: p14;
+	text-align: center;
+}
+
+#perso15{
+	grid-area: p15;
+	text-align: center;
+}
+
+h1{
+	font-size: larger;
+}
+
+h2{
+	font-size: medium;
+}
+
+.warning{
+	font-size: 14px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1080px) and (max-height: 2140px) {
+	*{
+	    margin: 0px;
+	}
+	
+	#art5{
+		height: 7vh;
+	}
+
+	body{
+		width: 359px;
+		height: 639px;
+	}
+
+	#cabecalho{
+		grid-gap: 0;
+		margin-left: -1.5vw;
+	}
+
+	#left{
+		font-size: 10px;
+	}
+
+	#mid{
+		font-size: 10px;
+		margin-left: 10vw;
+	}
+	
+	#right{
+	    font-size: 10px;
+	}
+
+	.art5{
+		height: 4vh;
+	}
+
+	#art5{
+		height: 11vh;
+	}
+
+	#container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 8vh 60vh 120vh;
+		grid-template-areas: "cab"
+												 "bod"
+												 "rod";
+												 width: 359px;
+												 height: 639px;
+												 grid-gap: 20px;
+	}
+
+	#corpo{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+		grid-template-areas: "p1 p2 p3"
+												 "p4 p5 p6"
+												 "p7 p8 p9"
+												 "p10 p11 p12"
+												 "p13 p14 p15";
+												 margin-left: 1.5vw;
+												 margin-right: 1.5vw;
+												 grid-gap: 60px;
+
+	}
+
+	.imgs{
+		height: 20vh;
+		width: 18vw;
+	}
+
+	h1{
+		font-size: 10px;
+	}
+
+	h2{
+		font-size: 10px;
+	}
+
+	.warning{
+		font-size: 2px;
+	}
+
+	#redes{
+		font-size: 16px;
+		margin-left: 10vw;
+	}
+
+	.social{
+		height: 3vh;
+		width: 6vw;
+	}
+	
+	#rodape{
+    margin-top: 100vh;
+    margin-left: -8vw;
+}
+
+}

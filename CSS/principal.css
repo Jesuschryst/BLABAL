@@ -1,0 +1,291 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	word-spacing: 2px;
+}
+
+body{
+	background-color: black;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 15vh 160vh 20vh;
+	grid-template-areas: "cab cab cab"
+											 "bod bod bod"
+											 "rod rod rod";
+	grid-gap: 80px;										 
+}
+
+#cabecalho{
+	grid-area: cab;
+	background-color: black;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bolder;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "esq meio dir";
+	grid-template-rows: 15vh;
+	align-content: center;
+	justify-items: center; 
+	grid-gap: 250px;
+}
+
+#mid{
+	grid-area: meio;
+	text-align: center;
+	color: white;
+	font-size: larger;
+
+	display: grid;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.art5{
+	grid-area: art;
+
+	height: 5vh;
+}
+
+#left{
+	grid-area: esq;
+	text-align: center;
+	font-size: larger;
+
+	display: grid;
+	align-content: center;
+	vertical-align: middle;
+	justify-content: space-between;
+}
+
+#SAO2{
+	grid-area: sao1;
+
+	display: grid;
+	align-content: center;
+}
+
+#right{
+	grid-area: dir;
+	text-align: center;
+	font-size: larger;
+
+	display: grid;
+	align-content: center;
+	justify-content: space-between;
+}
+
+#corpo{
+	grid-area: bod;
+	background-color: black;
+	color: white;
+
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 15vh 80vh 60vh;
+ grid-template-areas: "ini ini ini"
+ 											"img img img"
+											"sin sin sin";
+ grid-gap: 30px;											
+}
+
+#initial{
+	grid-area: ini;
+}
+
+#img{
+	grid-area: img;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "art2 art art3";
+	justify-items: center;
+	align-items: center;
+	grid-gap: 40px;
+}
+
+#art{
+	grid-area: art;
+	border: solid lightseagreen 2px;
+	height: 80vh;
+	
+}
+
+#art2{
+	grid-area: art2;
+	height: 40vh;
+
+	display: grid;
+}
+
+#art3{
+	grid-area: art3;
+	height: 40vh;
+
+	display: grid;
+}
+
+#art4{
+	height: 20vh;
+
+	float: right;
+	margin-top: 3%;
+}
+
+#art5{
+	height: 30vh;
+}
+
+
+#sinop{
+	grid-area: sin;
+}
+
+
+
+#rodape{
+	grid-area: rod;
+	border: solid black 5px;
+
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-gap: 30px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	transition: ease-in-out 0.4s;
+}
+
+a:hover{
+	color: lightseagreen;
+}
+
+ul.menu li { 
+	list-style: none;
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.sinopse{
+ font-size: 22px;
+ font-weight: bold;
+ color: white;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#p1{
+ text-align: center;
+ font-size: xx-large;
+ font-weight: bold;
+ color: white;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#redes{
+	text-align: center;
+ 	font-size: x-large;
+ 	font-weight: bold;
+ 	color: white;
+ 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.social{
+ height: 4vh;
+ width: 2.5vw;
+ border-radius: 50%;
+}
+
+@media screen and (max-width: 1080px) and (max-height: 2140px) {
+	#art2{
+		display: none;
+	}
+
+	#art3{
+		display: none;
+	}
+
+	#art4{
+		display: none;
+	}
+	
+	ul.menu li{
+	    padding: 1px;
+	}
+
+	#art5{
+		height: 15vh;
+	}
+
+	#cabecalho{
+		grid-gap: 15px;
+	}
+
+	#left{
+		font-size: 8px;
+	}
+
+	#right{
+		font-size: 8px;
+	}
+
+	.art5{
+		height: 3vh;
+	}
+
+	#art5{
+		height: 13vh;
+	}
+	
+	#img{
+	    display: grid;
+	    justify-content: center;
+	}
+
+	.sinopse{
+		font-size: 12px;
+	}
+
+	#art{
+		height: 40vh;
+	}
+
+	#container{
+		grid-template-rows: 8vh 115vh 70vh;
+		grid-template-columns: 1fr;
+		grid-template-areas: "cab"
+												 "bod"
+												 "rod";
+		grid-gap: 40px;
+	}
+
+	#corpo{
+		grid-template-rows: 15vh 40vh 40vh;
+		grid-template-columns: 1fr;
+		grid-template-areas: "ini"
+												 "img"
+												 "sin";
+	}
+
+	#redes{
+		font-size: 12px;
+	}
+
+	.social{
+		height: 3vh;
+		width: 6vw;
+	}
+
+	#p1{
+		font-size: 15px;
+	}
+
+
+}
