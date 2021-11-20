@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Atividade 03</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="css/estilo.css">
+	</head>
+
+	<body class="background">
+		<div class="container-sm">
+			<div style="height: 55px;" class="row align-items-start cabecalho h-30">
+				<div class="d-grid gap-2 col-6 ml-4 mt-2">
+					<a href="Atividade03-1.html"><button type="button" class="btn btn-outline-light botao letras col-3" >Clientes</button></a>
+					<a href="Atividade03-2.html"><button type="button" class="btn btn-outline-light botao letras col-3 active ">Veículos</button></a>
+					<a href="Atividade03-3.html"><button type="button" class="btn btn-outline-light botao letras col-3">Vendas</button></a>	
+				</div>
+		</div>
+
+		<div class="container">		
+			<form action="#" method="post" id="formulario">
+				<fieldset>
+			<div class="row align-items-center">
+				 <h2 class="form-text text-muted mx-auto ">Veículos</h2>	
+			</div>
+			<hr class="bord">
+			<h1 class="form-text text-danger font">Registros</h1>
+				<hr class="bord">
+			<div class="row form-group">
+				<div class="col-12">
+					<label for="description">Descrição</label>
+					<input type="text" class="form-control" name="descricao" id="description" required>
+				</div>
+				<div class="col-3">
+					<label for="valor">Valor</label>
+					<input type="number" name="valor" id="price" class="form-control" required>
+				</div>
+				<div class="col-3">
+					<label for="placa">Placa</label>
+					<input type="text" name="board" id="placa" class="form-control" required>
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-12">
+			  	<button class="btn btn-success float-left col-1 mr-2" type="submit" name="cadastro">Cadastrar</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<h1 class="form-text text-primary font">Consulta</h1>
+				<hr class="bord">
+				<table class="table table-bordered table-hover tabela">
+					<thead class="thead-dark">
+						<tr>
+							<th class="border-dark" scope="col">Descrição</th>
+							<th class="border-dark" scope="col">Valor</th>
+							<th class="border-dark" scope="col">Placa</th>
+							<th class="border-dark" scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-dark">Volkswagen Brasília 1981</td>
+							<td class="border-dark">R$20.900</td>
+							<td class="border-dark">JOJO-1717</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-danger" name="excluir">Excluir</button></td>
+						</tr>
+						<tr>
+							<td class="border-dark">Fiat Uno 2006 Flex 1.0 2p</td>
+							<td class="border-dark">R$16.000</td>
+							<td class="border-dark">QPAP-2424</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-danger" name="excluir">Excluir</button></td>
+						</tr>	
+						<tr>
+							<td class="border-dark">Chevrolet Corsa Sedan 2006 Maxx 1.0 (Flex)</td>
+							<td class="border-dark">R$20.900</td>
+							<td class="border-dark">CSGO-6969</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-danger" name="excluir">Excluir</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+				</fieldset>
+				</form>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
+
+</html>

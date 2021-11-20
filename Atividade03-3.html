@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Atividade 03</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="css/estilo.css">
+	</head>
+
+	<body class="background">
+		<div class="container-sm">
+			<div style="height: 55px;" class="row align-items-start cabecalho h-30">
+				<div class="d-grid gap-2 col-6 ml-4 mt-2">
+					<a href="Atividade03-1.html"><button type="button" class="btn btn-outline-light botao letras col-3" >Clientes</button></a>
+					<a href="Atividade03-2.html"><button type="button" class="btn btn-outline-light botao letras col-3" >Veículos</button></a>
+					<a href="Atividade03-3.html"><button type="button" class="btn btn-outline-light botao letras col-3 active" >Vendas</button></a>	
+					<a href="Atividade03.html"><button type="button" class="btn btn-outline-light botao letras col-2">Início</button></a>
+				</div>
+		</div>
+
+		<div class="container">		
+			<form action="#" method="post" id="formulario">
+				<fieldset>
+			<div class="row align-items-center">
+				 <h2 class="form-text text-muted mx-auto ">Vendas</h2>	
+			</div>
+			<hr class="bord">
+			<h1 class="form-text text-danger font">Registros</h1>
+				<hr class="bord">
+			<div class="row form-group">
+				<div class="col-12">
+					<label for="produto">Produto</label>
+					<select name="produto" id="product" class="form-control" required>
+						<option disabled selected value="0">Selecione um produto</option>
+						<option value="1">Volkswagen Brasília 1981</option>
+						<option value="2">Fiat Uno 2006 Flex 1.0 2p</option>
+						<option value="3">Chevrolet Corsa Sedan 2006 Maxx 1.0 (Flex)</option>
+					</select>
+				</div>
+				<div class="col-7">
+					<label for="cliente">Cliente</label>
+					<select name="cliente" id="client" class="form-control" required>
+						<option disabled selected value="0">Selecione um Cliente</option>
+						<option value="1">Jesus</option>
+						<option value="2">Cleiton</option>
+						<option value="3">Kscerato</option>
+					</select>
+				</div>
+				<div class="col-5">
+					<label for="placa">Forma de pagamento</label>
+					<select name="placa" id="board" class="form-control" required>
+						<option disabled selected value="0">Selecione um método de pagamento</option>
+						<option value="1">Me dar um cd do Amado Batista</option>
+						<option value="2">Programar um site</option>
+						<option value="3">150 Flexões</option>
+					</select>
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-12">
+			  	<button class="btn btn-success float-right col-1 mr-2" type="submit" name="cadastro">Cadastrar</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<h1 class="form-text text-primary font">Consulta</h1>
+				<hr class="bord">
+				<table class="table table-bordered table-hover tabela">
+					<thead class="thead-dark">
+						<tr>
+							<th class="border-dark" scope="col">Produto</th>
+							<th class="border-dark" scope="col">Cliente</th>
+							<th class="border-dark" scope="col">Método</th>
+							<th class="border-dark" scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-dark">Volkswagen Brasília 1981</td>
+							<td class="border-dark">Jesus</td>
+							<td class="border-dark">Programar um site</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-danger" name="excluir">Excluir</button></td>
+						</tr>
+						<tr>
+							<td class="border-dark">Fiat Uno 2006 Flex 1.0 2p</td>
+							<td class="border-dark">Cleiton</td>
+							<td class="border-dark">Me dar um CD do Amado Batista</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-danger" name="excluir">Excluir</button></td>
+						</tr>	
+						<tr>
+							<td class="border-dark">Chevrolet Corsa Sedan 2006 Maxx 1.0 (Flex)</td>
+							<td class="border-dark">Kscerato</td>
+							<td class="border-dark">150 Flexões</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-danger" name="excluir">Excluir</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+				</fieldset>
+				</form>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
+
+</html>
