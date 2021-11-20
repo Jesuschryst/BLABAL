@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Atividade 02</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="css/estilo.css">
+	</head>
+
+	<body class="fundo">
+		<div class="container">
+			<form action="#" method="post" id="formulario">
+				<fieldset>
+			<div class="row align-items-center">
+				 <h2 class="form-text text-muted mx-auto ">Registrando</h2>	
+			</div>
+			<hr class="bord">
+			<h1 class="form-text text-info font p-2">Dados</h1>
+				<hr>
+			<div class="row form-group">
+				<div class="col-8 p-3">
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="name" class="form-control" required>
+				</div>
+				<div class="col-4 p-3">
+					<label for="CPF">CPF</label>
+					<input type="number" class="form-control" name="Dado" id="CPF" required>
+				</div>
+				<div class="col-5">
+					<label for="destination">Destino da Viagem</label>
+				 <select name="city" id="cidade" list="datalistOptions" class="form-control" required>
+						<option value="1">Coronel Fabriciano</option>
+						<option value="2">Ipatinga</option>
+						<option value="3">Timóteo</option>
+						<option value="4">Governador Valadares</option>
+						<option value="5">Belo Oriente</option>
+						<option value="6">Rio Piracicaba</option>
+				 </select>
+				</div>
+				<div class="col-7">
+					<label for="type">Selecione o número da poltrona do ônibus</label>
+					<select class="form-control" list="datalistOptions" name="tipo" id="type" required>
+						<option value="1">N°1</option>
+						<option value="2">N°2</option>
+						<option value="3">N°3</option>
+						<option value="4">N°4</option>
+						<option value="5">N°5</option>
+						<option value="6">N°6</option>
+						<option value="7">N°7</option>
+						<option value="8">N°8</option>
+						<option value="9">N°9</option>
+						<option value="10">N°10</option>
+						<option value="11">N°11</option>
+						<option value="12">N°12</option>
+						<option value="13">N°13</option>
+						<option value="14">N°14</option>
+						<option value="15">N°15</option>
+						<option value="16">N°16</option>
+						<option value="17">N°17</option>
+						<option value="18">N°18</option>
+						<option value="19">N°19</option>
+						<option value="20">N°20</option>
+						<option value="21">N°21</option>
+						<option value="22">N°22</option>
+						<option value="23">N°23</option>
+						<option value="24">N°24</option>
+						<option value="25">N°25</option>
+						<option value="26">N°26</option>
+						<option value="27">N°27</option>
+						<option value="28">N°28</option>
+						<option value="29">N°29</option>
+						<option value="30">N°30</option>
+						<option value="31">N°31</option>
+						<option value="32">N°32</option>
+						<option value="33">N°33</option>
+						<option value="34">N°34</option>
+						<option value="35">N°35</option>
+						<option value="36">N°36</option>
+						<option value="37">N°37</option>
+						<option value="38">N°38</option>
+						<option value="39">N°39</option>
+						<option value="40">N°40</option>
+					</select>
+				</div>					
+			</div>
+			<div class="row form-group">
+				<div class="col-12">
+			  	<button class="btn btn-primary float-right col-1 mr-2" type="submit" name="verificar" id="verify">Verificar</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<h1 class="form-text text-primary font">Lista de poltronas</h1>
+				<hr class="bord">
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th class="border-dark">Poltrona</th>
+							<th class="border-dark">Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°1</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°2</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°3</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°4</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°5</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°6</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°7</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°8</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°9</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°10</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°11</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°12</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°13</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°14</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°15</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°16</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°17</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°18</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°19</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°20</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°21</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°22</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°23</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°24</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°25</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°26</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°27</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°28</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°29</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°30</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°31</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°32</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°33</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°34</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°35</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°36</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°37</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="livre border-dark bord">Poltrona N°38</td>
+							<td class="livre border-dark bord">Livre</td>
+						</tr>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°39</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>	
+					</tbody>
+					<tfoot>
+						<tr>
+							<td class="ocupado border-dark bord">Poltrona N°40</td>
+							<td class="ocupado border-dark bord">Ocupado</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			
+				</fieldset>
+				</form>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
+
+</html>

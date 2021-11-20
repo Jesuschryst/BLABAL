@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Atividade 01</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="css/estilo.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<form action="#" method="post" id="formulario">
+				<fieldset>
+			<div class="row align-items-center">
+				 <h2 class="form-text text-muted mx-auto ">Lançamentos</h2>	
+			</div>
+			<hr class="bord">
+			<h1 class="form-text text-warning font">Registros</h1>
+				<hr class="bord">
+			<div class="row form-group">
+				<div class="col-12">
+					<label for="nome">Nome</label>
+					<input type="text" class="form-control" name="nome" id="name" required>
+				</div>
+				<div class="col-5">
+					<label for="valor">Valor</label>
+					<input type="number" name="valor" id="valor" class="form-control" required>
+				</div>
+				<div class="col-7">
+					<label for="type">Tipo de lançamento</label>
+					<select class="form-control" list="datalistOptions" name="tipo" id="type" required>
+						<option disabled selected value="0">Selecione o tipo de lançamento</option>
+						<option value="1">Lançamento para o espaço</option>
+						<option value="2">Lançamento para Marte</option>
+						<option value="3">Lançamento para a roça daqui </option>
+					</select>
+				</div>					
+			</div>
+			<div class="row form-group">
+				<div class="col-12">
+			  	<button class="btn btn-success float-right col-1 mr-2" type="submit" name="Registro">Registrar</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<h1 class="form-text text-primary font">Consulta</h1>
+				<hr class="bord">
+				<table class="table table-bordered table-hover">
+					<thead class="thead-dark">
+						<tr>
+							<th class="border-dark" scope="col">Descrição</th>
+							<th class="border-dark" scope="col">Valor</th>
+							<th class="border-dark" scope="col">Tipo</th>
+							<th class="border-dark" scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-dark">Pagamento CEMIG</td>
+							<td class="border-dark">500</td>
+							<td class="border-dark">Débito</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-warning" name="excluir">Excluir</button></td>
+						</tr>
+						<tr>
+							<td class="border-dark">Venda de produtos</td>
+							<td class="border-dark">1000</td>
+							<td class="border-dark">Débito</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-warning" name="excluir">Excluir</button></td>
+						</tr>	
+						<tr>
+							<td class="border-dark">Pagamento COPASA</td>
+							<td class="border-dark">100</td>
+							<td class="border-dark">Débito</td>
+							<td class="d-flex justify-content-center border-dark"><button type="button" class="btn btn-warning" name="excluir">Excluir</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+				<div class="row form-group">
+					<div class="col">
+					<label for="credits">Total de créditos</label>
+					<input placeholder="1000" type="number" name="credits" id="credits" class="form-control" readonly >
+				</div>
+				<div class="col">
+					<label for="debit">Total de debitos</label>
+					<input placeholder="600" type="number" name="debits" id="debits" class="form-control" readonly>
+				</div>
+				</div>
+			
+				</fieldset>
+				</form>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
+
+</html>
